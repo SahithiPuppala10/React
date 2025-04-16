@@ -1,0 +1,97 @@
+/* index.css (src/index.css) */
+/* NiceStyles.css */
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* A clean and modern font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #f0f2f5, #e1e5ea); /* Subtle background gradient */
+  color: #333; /* Darker text for better readability */
+  line-height: 1.6; /* Improved line spacing */
+}
+
+#root {
+  min-height: 100vh; /* Ensure the root element covers the full viewport height */
+}
+
+code {
+  font-family: 'Source Code Pro', monospace; /* A readable monospace font */
+  background-color: #f8f8f8; /* Light background for code snippets */
+  padding: 2px 5px;
+  border-radius: 4px;
+  color: #d73a49; /* A distinct color for code */
+}
+
+/* Global Button Styles */
+button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+button:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Global Input Styles */
+input[type='text'],
+input[type='password'],
+textarea {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff; /* Highlight on focus */
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Card-like styling for elements */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  body {
+    padding: 0.5rem; /* Add some padding on smaller screens */
+  }
+
+  .card {
+    padding: 1rem; /* Reduce padding on cards for smaller screens */
+  }
+}
+
+/* Elegant Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.8rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
